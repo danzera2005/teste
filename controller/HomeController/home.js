@@ -4,4 +4,6 @@ module.exports.home = (req,res) =>{
 
 module.exports.CadastrarUsuario = (req,res) =>{
     res.send(req.query)
+    console.log(req.query)
+
 }
