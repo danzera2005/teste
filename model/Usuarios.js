@@ -1,7 +1,7 @@
 const conn = require("../config/conexao")
 
 
-class CadastrarUsuarios{
+class Usuarios{
 
 
     CadUser(object){
@@ -32,4 +32,4 @@ class CadastrarUsuarios{
 
 }
 
-module.exports = CadastrarUsuarios
+module.exports = Usuarios

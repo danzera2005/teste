@@ -1,4 +1,4 @@
-const CadastrarUsuario = require("../../model/CadastrarUsuarios")
+const CadastrarUsuario = require("../../model/Usuarios")
 
 module.exports.home = (req,res) =>{
     res.send("ola povo")
@@ -16,4 +16,9 @@ module.exports.CadastrarUsuario = (req,res) =>{
 
     valores.CadUser(dados)
 
+}
+
+
+module.exports.dados = (req,res) =>{
+    res.send("aqui ficam os dados")
 }
