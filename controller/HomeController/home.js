@@ -3,5 +3,5 @@ module.exports.home = (req,res) =>{
 }
 
 module.exports.CadastrarUsuario = (req,res) =>{
-    console.log(req.query)
+    console.log(req.body)
 }
