@@ -7,3 +7,7 @@ app.listen(port,(err)=>{
     if(err) throw err;
     console.log(`Servidor rodando na porta ${port}`)
 })
+
+app.get('/',(req,res)=>{
+    res.send("ola")
+})
