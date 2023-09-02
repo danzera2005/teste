@@ -9,7 +9,7 @@ class CadastrarUsuarios{
         const sql = "INSERT INTO usuarios (nome,email,senha) VALUES (?,?,?)"
         const url = "localhost:3000"
 
-        const data = {
+         const data = {
             mensagem: 'Olá, isso é um alerta!',
           };
 
