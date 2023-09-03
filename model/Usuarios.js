@@ -30,6 +30,32 @@ class Usuarios{
         })
     }
 
+    Deletar(object){
+
+        const values = [
+            object.id
+        ]
+
+        console.log(values)
+    }
+
+    VerUsuario(){
+       
+            return new Promise((resolve, reject) => {
+              const sql = "SELECT * FROM usuarios";
+          
+              conn.query(sql, (err, result, fields) => {
+                if (err) {
+                  reject(err); // Rejeita a Promise em caso de erro
+                } else {
+                  resolve(result); // Resolve a Promise com os dados obtidos
+                }
+              });
+            });
+          
+          
+    }
+
 }
 
 module.exports = Usuarios
